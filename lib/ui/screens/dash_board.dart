@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:gulf_tmt/src/bloc/dash_board/user_bloc.dart';
-import 'package:gulf_tmt/src/bloc/dash_board/user_event.dart';
-import 'package:gulf_tmt/src/bloc/dash_board/user_state.dart';
-import 'package:gulf_tmt/src/data/constants/app_settings.dart';
-import 'package:gulf_tmt/src/repository/remote_user_repo.dart';
-import 'package:gulf_tmt/src/ui/bits/custom_text.dart';
+import 'package:gulf_tmt/bloc/dash_board/user_bloc.dart';
+import 'package:gulf_tmt/bloc/dash_board/user_event.dart';
+import 'package:gulf_tmt/bloc/dash_board/user_state.dart';
+import 'package:gulf_tmt/data/constants/app_settings.dart';
+import 'package:gulf_tmt/repository/remote_user_repo.dart';
+import 'package:gulf_tmt/ui/bits/custom_text.dart';
+
 
 class DashBoard extends StatelessWidget {
   const DashBoard({super.key});
@@ -56,7 +57,7 @@ class DashBoard extends StatelessWidget {
                           const Divider(),
                       itemCount: state.users.length);
                 } else {
-                  return const Center(
+                  return  const Center(
                     child: CustomText(data: "Something Went Wrong!"),
                   );
                 }

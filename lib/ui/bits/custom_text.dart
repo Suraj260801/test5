@@ -6,19 +6,27 @@ class CustomText extends StatelessWidget {
       required this.data,
       this.fontSize,
       this.fontWeight,
-      this.textColor});
+      this.textColor, this.textDecoration, this.opacity});
 
   final String data;
   final double? fontSize;
   final FontWeight? fontWeight;
   final Color? textColor;
+  final TextDecoration? textDecoration;
+  final double ?opacity;
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      data,
-      style: TextStyle(
-          fontSize: fontSize, fontWeight: fontWeight, color: textColor),
+    return Opacity(
+
+      opacity: opacity??1,
+      child: Text(
+        data,
+        style: TextStyle(
+            fontSize: fontSize, fontWeight: fontWeight, color: textColor,
+          decoration: textDecoration,
+        ),
+      ),
     );
   }
 }

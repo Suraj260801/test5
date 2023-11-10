@@ -1,0 +1,17 @@
+{
+"forHelpDocumentTap":"ヘルプドキュメントを参照",
+"help": "ヘルプ",
+"sampleEmail":"サンプル@xyz.com",
+"sampleMobile":"12345 98765",
+"changeLanguage":"言語を変えてください",
+"welcome":"いらっしゃいませ！",
+"loginWithGulfNetTmt":"GulfNet TMT でログイン",
+"userId":"ユーザーID",
+"password":"パスワード",
+"organisationCode":"組織コード、",
+"logIn":"ログイン",
+"forgotPasswordTapHere":"パスワードを忘れた",
+"english":"English",
+"japanese":"英語",
+"thai":"ภาษาอังกฤษ"
+}

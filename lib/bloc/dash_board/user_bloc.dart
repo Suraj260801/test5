@@ -1,10 +1,11 @@
 
 
+
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:gulf_tmt/src/bloc/dash_board/user_event.dart';
-import 'package:gulf_tmt/src/bloc/dash_board/user_state.dart';
-import 'package:gulf_tmt/src/models/user_model.dart';
-import 'package:gulf_tmt/src/repository/remote_user_repo.dart';
+import 'package:gulf_tmt/bloc/dash_board/user_event.dart';
+import 'package:gulf_tmt/bloc/dash_board/user_state.dart';
+import 'package:gulf_tmt/models/user_model.dart';
+import 'package:gulf_tmt/repository/remote_user_repo.dart';
 
 class UserBloc extends Bloc<UserEvent,UserState>{
   final RemoteUserRepo userRepo;

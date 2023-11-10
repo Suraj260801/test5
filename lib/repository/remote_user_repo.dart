@@ -1,5 +1,6 @@
 
-import 'package:gulf_tmt/src/models/user_model.dart';
+
+import 'package:gulf_tmt/models/user_model.dart';
 
 import '../services/users_api_service.dart';
 

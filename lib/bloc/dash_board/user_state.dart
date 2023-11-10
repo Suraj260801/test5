@@ -1,4 +1,4 @@
-import 'package:gulf_tmt/src/models/user_model.dart';
+import 'package:gulf_tmt/models/user_model.dart';
 
 abstract class UserState{}
 
