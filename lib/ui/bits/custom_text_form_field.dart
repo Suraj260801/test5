@@ -10,12 +10,13 @@ class CustomTextFormField extends StatelessWidget {
       required this.hintText,
       required this.iconData,
       this.borderRadius,
-      this.showPasswordIconData});
+      this.showPasswordIconData, required this.onTap});
 
   final String hintText;
   final IconData iconData;
   final FormFieldBorderRadius? borderRadius;
   final IconData? showPasswordIconData;
+  final Function onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +28,7 @@ class CustomTextFormField extends StatelessWidget {
               topLeft: Radius.circular(borderRadius?.topRight ?? 0),
               bottomLeft: Radius.circular(borderRadius?.bottomLeft ?? 0),
               bottomRight: Radius.circular(borderRadius?.bottomRight ?? 0))),
-      padding: const EdgeInsets.symmetric(horizontal: 16),
+      padding: const EdgeInsets.symmetric(horizontal: 16,vertical: 0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -41,24 +42,26 @@ class CustomTextFormField extends StatelessWidget {
           Flexible(
               flex: 9,
               child: TextFormField(
+                onTap: ()=>onTap,
                 decoration: InputDecoration(
                     hintText: hintText,
                     hintStyle: const TextStyle(
                         fontWeight: FontWeight.w400,
                         fontSize: AppFontSize.textSizeSmall,
                         color: AppColors.textFormFieldHintTextColor),
-                    border: InputBorder.none),
+                    border: InputBorder.none,
+
+                ),
               )),
           Visibility(
               visible: !(showPasswordIconData == null),
-              child: Flexible(
-                  child: IconButton(
+              child: IconButton(
                 color: AppColors.textFormFieldHintTextColor,
                 onPressed: () {
 
                 },
                 icon: Icon(showPasswordIconData),
-              )))
+              ))
         ],
       ),
     );

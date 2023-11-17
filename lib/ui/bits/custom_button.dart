@@ -12,7 +12,7 @@ class CustomButton extends StatelessWidget {
       required this.width,
       required this.labelSize,
       required this.labelFontWeight,
-      required this.labelColor});
+      required this.labelColor, required this.onClick});
 
   final String label;
   final double height;
@@ -22,10 +22,12 @@ class CustomButton extends StatelessWidget {
   final double labelSize;
   final FontWeight labelFontWeight;
   final Color labelColor;
+  final VoidCallback onClick;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
+      onTap: onClick,
       child: Container(
         alignment: Alignment.center,
         height: height,

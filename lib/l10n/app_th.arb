@@ -1,3 +1,20 @@
 {
-
+  "forHelpDocumentTap": "สำหรับเอกสารช่วยเหลือ ให้แตะ",
+  "help": "ช่วย",
+  "sampleEmail": "sample@xyz.com",
+  "sampleMobile": "12345 98765",
+  "changeLanguage": "เปลี่ยนภาษา",
+  "welcome": "ยินดีต้อนรับ!",
+  "loginWithGulfNetTmt": "เข้าสู่ระบบด้วย GulfNet TMT",
+  "userId": "รหัสผู้ใช้",
+  "password": "รหัสผ่าน",
+  "organisationCode": "รหัสองค์กร",
+  "logIn": "เข้าสู่ระบบ",
+  "forgotPasswordTapHere": "ลืมรหัสผ่านแตะที่นี่",
+  "english": "English",
+  "japanese": "英語",
+  "thai": "แบบไทย"
 }
+
+
+
